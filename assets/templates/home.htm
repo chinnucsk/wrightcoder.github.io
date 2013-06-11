@@ -1,0 +1,41 @@
+<div class="well">
+  <h1>Github</h1>
+
+  <table class="table table-striped">
+    <thead>
+      <td>Project</td>
+      <td>Description</td>
+      <td>Language</td>
+      <td>Status</td>
+    </thead>
+    <tbody>
+      <tr ng-repeat="project in github">
+        <td><a href="{{project.repo}}">{{project.name}}</a></td>
+        <td>{{project.description}}</td>
+        <td>{{project.language}}</td>
+        <td>{{project.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="well">
+  <h1>Bitbucket</h1>
+
+  <table class="table table-striped">
+    <thead>
+      <td>Project</td>
+      <td>Description</td>
+      <td>Language</td>
+      <td>Status</td>
+    </thead>
+    <tbody>
+      <tr ng-repeat="project in bitbucket">
+        <td><a href="{{project.repo}}">{{project.name}}</a></td>
+        <td>{{project.description}}</td>
+        <td>{{project.language}}</td>
+        <td>{{project.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
