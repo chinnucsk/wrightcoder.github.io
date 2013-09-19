@@ -4,18 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>Wrightcoder - Love to learn</title>
-  <link rel="stylesheet" href="css/app.css"/>
+
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/app.css" />
 </head>
 
-<body>
-  <ul class="menu">
-    <li><a href="#/home">Home</a></li>
-    <li><a href="#/blogs">Blog</a></li>
-    <li><a href="#/projects">Projects</a></li>
-    <li><a href="#/contact">Contact</a></li>
-  </ul>
+<body class="container-narrow">
+  <header class="masthead row">
+    <ul class="menu nav nav-pills span4">
+      <li><a href="#/home">Home</a></li>
+      <li><a href="#/blogs">Blog</a></li>
+      <li><a href="#/projects">Projects</a></li>
+      <li><a href="#/contact">Contact</a></li>
+    </ul>
+  </header>
 
-  <div ng-view></div>
+  <hr />
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2"></div>
+      <div ng-view class="span10 contents"></div>
+    </div>
+  </div>
 
   <footer>
     App Version: <span app-version></span>
@@ -24,6 +35,11 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/bootstrap.min.js"></script>
+  <script src="lib/less/less.min.js"></script>
+  <script src="lib/coffeescript/coffee-script.js"></script>
+
   <script src="lib/angular/angular.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
