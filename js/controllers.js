@@ -2,10 +2,16 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+angular.module('blogApp.controllers', []).
+  controller('HomeController', [function () {
 
-  }])
-  .controller('MyCtrl2', [function() {
+  }]).
+  controller('ProjectController', [function () {
+
+  }]).
+  controller('BlogController', [function () {
+
+  }]).
+  controller('ContactController', [function () {
 
   }]);
