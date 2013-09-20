@@ -4,10 +4,16 @@ div {
   /*color: #000000;*/
 }
 
+.pageTitle {
+  font-size: 60px;
+}
+
 .mainHead {
   /*padding: 0 40px 0 40px; */
+  padding-bottom: 25px;
 }
 
 .container {
+  padding-top: 10px;
   /*background-color: #dceaf4*/
 }
