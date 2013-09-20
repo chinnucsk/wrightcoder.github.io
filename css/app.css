@@ -1,5 +1,13 @@
 /* app css stylesheet */
 
+div { 
+  /*color: #000000;*/
+}
+
+.mainHead {
+  /*padding: 0 40px 0 40px; */
+}
+
 .container {
   /*background-color: #dceaf4*/
 }
